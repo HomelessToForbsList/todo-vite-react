@@ -1,4 +1,3 @@
-import React from 'react'
 import { Box, Pagination } from '@mui/material';
 
 import { useAppSelector, useAppDispatch } from '../../store/store';
@@ -18,7 +17,7 @@ const PaginationComponent = () => {
       <Pagination
         count={totalPages}
         page={currentPage}
-        onChange={(event: React.ChangeEvent<unknown>,value: number) => handleChangePage(value)}
+        onChange={(_ ,value: number) => handleChangePage(value)}
         sx={{my:3}}
       />
     </Box>
